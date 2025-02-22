@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="header">Upto <b>50% OFF</b> on <span>Select Services!</span></div>
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search by Services" onkeyup="searchProduct()">
+        <button onclick="searchProduct()"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="cards" id="cards-container">
+        <div class="card" data-name="laundry" onclick="redirect('laundry.html')">
+            <img src="images/laundry.jpeg" alt="Laundry">
+            <p>Laundry</p>
+        </div>
+        <div class="card" data-name="dry clean" onclick="redirect('dryClean.html')">
+            <img src="images/dryClean.jpeg" alt="Dry Clean">
+            <p>Dry Clean</p>
+        </div>
+        <div class="card" data-name="upholstery" onclick="redirect('Upholstery.html')">
+            <img src="images/Upholstery.jpeg" alt="Upholstery">
+            <p>Upholstery</p>
+        </div>
+        <div class="card" data-name="steam ironing" onclick="redirect('steamIroning.html')">
+            <img src="images/steamIroning.jpeg" alt="Steam Ironing">
+            <p>Steam Ironing</p>
+        </div>
+        <div class="card" data-name="home cleaning" onclick="redirect('homeCleaning.html')">
+            <img src="images/homeCleaning.jpeg" alt="Home Cleaning">
+            <p>Home Cleaning</p>
+        </div>
+        <div class="card" data-name="products store" onclick="redirect('productsStore.html')">
+            <img src="images/productsStore.jpeg" alt="Products Store">
+            <p>Products Store</p>
+        </div>
+    </div>
+    <div class="carousel-container">
+        <h3>Hot Deals</h3>
+        <div class="carousel">
+            <a href="product.html"><img class="carousel-item active" src="images/hotDeals1.jpeg" alt="Offer 1"></a>
+            <a href="product.html"><img class="carousel-item" src="images/hotDeals2.jpeg" alt="Offer 2"></a>
+            <a href="product.html"><img class="carousel-item" src="images/hotDeals3.jpeg" alt="Offer 3"></a>
+            <a href="product.html"><img class="carousel-item" src="images/hotDeals4.jpeg" alt="Offer 4"></a>
+        </div>
+    </div>
+</body>
+</html>
